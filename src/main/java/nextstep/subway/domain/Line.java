@@ -1,8 +1,7 @@
 package nextstep.subway.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Line extends BaseEntity {
@@ -62,4 +61,7 @@ public class Line extends BaseEntity {
         return sections.getSize();
     }
 
+    public Set<Station> getDistinctStation() {
+        return sections.distinctDuplication();
+    }
 }

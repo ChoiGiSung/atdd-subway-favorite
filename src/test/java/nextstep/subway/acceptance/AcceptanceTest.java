@@ -26,7 +26,6 @@ public class AcceptanceTest {
         databaseCleanup.execute();
     }
 
-
     public void 상태_값_검사(ExtractableResponse<Response> 응답_값, HttpStatus 상태_코드) {
         assertThat(응답_값.statusCode()).isEqualTo(상태_코드.value());
     }
