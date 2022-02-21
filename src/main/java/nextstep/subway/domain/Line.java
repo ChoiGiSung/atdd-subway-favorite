@@ -66,3 +66,4 @@ public class Line extends BaseEntity {
     }
 
 }
+
